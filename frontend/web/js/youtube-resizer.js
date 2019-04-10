@@ -1,0 +1,1 @@
+$(function(){var t=$("iframe[src^='//www.youtube.com']"),i=$("#video-block");t.each(function(){$(this).data("aspectRatio",this.height/this.width).removeAttr("height").removeAttr("width")}),$(window).resize(function(){var e=i.width();t.each(function(){var t=$(this);t.width(e).height(e*t.data("aspectRatio"))})}).resize()});

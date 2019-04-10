@@ -1,0 +1,42 @@
+<?php
+
+use yii\db\Migration;
+
+/**
+ * Class m190216_114054_alter_city_table
+ */
+class m190216_114054_alter_city_table extends Migration
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function safeUp()
+    {
+		$this->addColumn('city', 'seo_title_pl', 'VARCHAR(255) NULL');
+		$this->addColumn('city', 'seo_title_en', 'VARCHAR(255) NULL');
+		$this->addColumn('city', 'seo_title_ru', 'VARCHAR(255) NULL');
+
+	    $this->addColumn('city', 'seo_description_pl', 'VARCHAR(255) NULL');
+	    $this->addColumn('city', 'seo_description_en', 'VARCHAR(255) NULL');
+	    $this->addColumn('city', 'seo_description_ru', 'VARCHAR(255) NULL');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function safeDown()
+    {
+        echo "m190216_114054_alter_city_table cannot be reverted.\n";
+
+	    $this->dropColumn('city', 'seo_title_pl');
+	    $this->dropColumn('city', 'seo_title_en');
+	    $this->dropColumn('city', 'seo_title_ru');
+
+	    $this->dropColumn('city', 'seo_description_pl');
+	    $this->dropColumn('city', 'seo_description_en');
+	    $this->dropColumn('city', 'seo_description_ru');
+
+        return false;
+    }
+
+}
