@@ -10,11 +10,11 @@ class Testimonial extends \common\models\Testimonial
 	{
 		return [
 			'id' => 'ID',
-			'name_pl' => 'ФИО (Польский)',
+			'name_ge' => 'ФИО (Грузинский)',
 			'name_en' => 'ФИО (Английский)',
 			'name_ru' => 'ФИО (Русский)',
 			'avatar' => 'Аватар',
-			'body_pl' => 'Описание (Польский)',
+			'body_ge' => 'Описание (Грузинский)',
 			'body_en' => 'Описание (Английский)',
 			'body_ru' => 'Описание (Русский)',
 			'status' => 'Статус',

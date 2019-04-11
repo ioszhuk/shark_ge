@@ -21,7 +21,7 @@ use yii\helpers\Url;
 				<div id="map">
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="poland-map">
+							<div class="georgia-map">
 
                                 <div class="static-map">
                                     <img src="/image/static-map.png">

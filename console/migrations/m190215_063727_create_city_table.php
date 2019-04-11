@@ -15,12 +15,12 @@ class m190215_063727_create_city_table extends Migration
         $this->createTable('city', [
             'id' => $this->primaryKey(),
 
-            'name_pl' => $this->string(255)->notNull(),
+            'name_ge' => $this->string(255)->notNull(),
             'name_en' => $this->string(255)->notNull(),
             'name_ru' => $this->string(255)->notNull(),
             'slug' => $this->string(255)->notNull(),
 
-            'body_pl' => $this->text()->null(),
+            'body_ge' => $this->text()->null(),
             'body_en' => $this->text()->null(),
             'body_ru' => $this->text()->null(),
 

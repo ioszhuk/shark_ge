@@ -24,7 +24,7 @@ class m190215_170233_alter_city_table extends Migration
 
 	    $this->dropColumn('city', 'anchor');
 
-        return false;
+        return true;
     }
 
 }

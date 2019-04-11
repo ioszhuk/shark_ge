@@ -19,7 +19,7 @@ class ClientSearch extends Client
     {
         return [
             [['id', 'sort_order', 'created_at', 'updated_at'], 'integer'],
-            [['position', 'name_pl', 'name_en', 'name_ru', 'image_pl', 'image_en', 'image_ru', 'body_pl', 'body_en', 'body_ru'], 'safe'],
+            [['position', 'name_ge', 'name_en', 'name_ru', 'image_ge', 'image_en', 'image_ru', 'body_ge', 'body_en', 'body_ru'], 'safe'],
         ];
     }
 
@@ -66,13 +66,13 @@ class ClientSearch extends Client
         ]);
 
         $query->andFilterWhere(['like', 'position', $this->position])
-            ->andFilterWhere(['like', 'name_pl', $this->name_pl])
+            ->andFilterWhere(['like', 'name_ge', $this->name_ge])
             ->andFilterWhere(['like', 'name_en', $this->name_en])
             ->andFilterWhere(['like', 'name_ru', $this->name_ru])
-            ->andFilterWhere(['like', 'image_pl', $this->image_pl])
+            ->andFilterWhere(['like', 'image_ge', $this->image_ge])
             ->andFilterWhere(['like', 'image_en', $this->image_en])
             ->andFilterWhere(['like', 'image_ru', $this->image_ru])
-            ->andFilterWhere(['like', 'body_pl', $this->body_pl])
+            ->andFilterWhere(['like', 'body_ge', $this->body_ge])
             ->andFilterWhere(['like', 'body_en', $this->body_en])
             ->andFilterWhere(['like', 'body_ru', $this->body_ru]);
 

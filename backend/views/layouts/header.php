@@ -65,7 +65,7 @@ use yii\helpers\Url;
                         <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel" aria-haspopup="true">
                             <a href="javascript:;" class="m-menu__link m-menu__toggle">
                                 <i class="m-menu__link-icon flaticon-avatar"></i>
-                                <span class="m-menu__link-text">Admin<?// Yii::$app->user->identity->username ?></span>
+                                <span class="m-menu__link-text">Admin</span>
                             </a>
                         </li>
 

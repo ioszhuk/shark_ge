@@ -53,7 +53,7 @@ class TestimonialController extends Controller
     {
         $model = new Testimonial();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+	    if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index']);
         }
 
@@ -73,7 +73,9 @@ class TestimonialController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+	    $model->setScenario('update');
+
+	    if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['update', 'id' => $model->id]);
         }
 

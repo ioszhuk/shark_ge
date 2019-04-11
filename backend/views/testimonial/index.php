@@ -16,11 +16,11 @@ $this->params['breadcrumbs'][] = ['label' => $__params['items'], 'url' => ['test
 
 $columns = [
 	[
-		'attribute' => 'name_pl',
+		'attribute' => 'name_ge',
 		'format' => 'raw',
 		'label' => 'ФИО',
 		'value' => function($model) {
-			return Html::a($model->name_pl, ['update', 'id' => $model->id]);
+			return Html::a($model->name_ge, ['update', 'id' => $model->id]);
 		}
 	],
 	[

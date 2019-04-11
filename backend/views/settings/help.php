@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 
             <div class="row justify-content-between">
                 <div class="col like-box">
-			        <?= $form->field($model, 'seo_title_pl')->textInput(['maxlength' => true]) ?>
+			        <?= $form->field($model, 'seo_title_ge')->textInput(['maxlength' => true]) ?>
 
 			        <?= $form->field($model, 'seo_title_en')->textInput(['maxlength' => true]) ?>
 
@@ -45,7 +45,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
 
             <div class="row justify-content-between">
                 <div class="col like-box">
-			        <?= $form->field($model, 'seo_description_pl')->textInput(['maxlength' => true]) ?>
+			        <?= $form->field($model, 'seo_description_ge')->textInput(['maxlength' => true]) ?>
 
 			        <?= $form->field($model, 'seo_description_en')->textInput(['maxlength' => true]) ?>
 
@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
             <div class="row justify-content-between">
 
                 <div class="col like-box">
-			        <?= $form->field($model, 'name_pl')->textInput(['maxlength' => true]) ?>
+			        <?= $form->field($model, 'name_ge')->textInput(['maxlength' => true]) ?>
 
 			        <?= $form->field($model, 'name_en')->textInput(['maxlength' => true]) ?>
 
@@ -72,7 +72,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
             <div class="row justify-content-between">
 
                 <div class="col like-box">
-					<?= $form->field($model, 'common_question_pl')->widget(MultipleInput::className(), [
+					<?= $form->field($model, 'common_question_ge')->widget(MultipleInput::className(), [
 						'allowEmptyList'    => true,
 						'enableGuessTitle'  => false,
 						'sortable' => false,
@@ -180,7 +180,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
             <div class="row justify-content-between">
 
                 <div class="col like-box">
-					<?= $form->field($model, 'help_for_driver_pl')->widget(MultipleInput::className(), [
+					<?= $form->field($model, 'help_for_driver_ge')->widget(MultipleInput::className(), [
 						'allowEmptyList'    => true,
 						'enableGuessTitle'  => false,
 						'sortable' => false,
@@ -285,7 +285,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ['settings/h
             <div class="row justify-content-between">
 
                 <div class="col like-box">
-					<?= $form->field($model, 'help_for_client_pl')->widget(MultipleInput::className(), [
+					<?= $form->field($model, 'help_for_client_ge')->widget(MultipleInput::className(), [
 						'allowEmptyList'    => true,
 						'enableGuessTitle'  => false,
 						'sortable' => false,

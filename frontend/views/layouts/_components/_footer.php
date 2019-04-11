@@ -31,7 +31,7 @@ use yii\helpers\Url;
                 <table class="phone-adress">
                     <tr>
                         <td class="icon-footer"><span class="glyphicon glyphicon-envelope"></span></td>
-                        <td><?= Yii::t('app', 'email__support_title') ?>:<br/><a href="mailto:support@shark-taxi.pl">support@shark-taxi.pl</a></td>
+                        <td><?= Yii::t('app', 'email__support_title') ?>:<br/><a href="mailto:support@shark-taxi.ge">support@shark-taxi.ge</a></td>
                     </tr>
                 </table>
             </div>
@@ -39,7 +39,7 @@ use yii\helpers\Url;
                 <table class="phone-adress">
                     <tr>
                         <td class="icon-footer"><span class="glyphicon glyphicon-envelope"></span></td>
-                        <td><?= Yii::t('app', 'email__information_title') ?>:<br/><a href="mailto:info@shark-taxi.pl">info@shark-taxi.pl</a></td>
+                        <td><?= Yii::t('app', 'email__information_title') ?>:<br/><a href="mailto:info@shark-taxi.ge">info@shark-taxi.ge</a></td>
                     </tr>
                 </table>
             </div>

@@ -19,7 +19,7 @@ class CitySearch extends City
     {
         return [
             [['id', 'status', 'created_at', 'updated_at'], 'integer'],
-            [['name_pl', 'name_en', 'name_ru', 'slug', 'body_pl', 'body_en', 'body_ru'], 'safe'],
+            [['name_ge', 'name_en', 'name_ru', 'slug', 'body_ge', 'body_en', 'body_ru'], 'safe'],
         ];
     }
 
@@ -65,11 +65,11 @@ class CitySearch extends City
             'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'name_pl', $this->name_pl])
+        $query->andFilterWhere(['like', 'name_ge', $this->name_ge])
             ->andFilterWhere(['like', 'name_en', $this->name_en])
             ->andFilterWhere(['like', 'name_ru', $this->name_ru])
             ->andFilterWhere(['like', 'slug', $this->slug])
-            ->andFilterWhere(['like', 'body_pl', $this->body_pl])
+            ->andFilterWhere(['like', 'body_ge', $this->body_ge])
             ->andFilterWhere(['like', 'body_en', $this->body_en])
             ->andFilterWhere(['like', 'body_ru', $this->body_ru]);
 

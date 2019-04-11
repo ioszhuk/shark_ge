@@ -14,7 +14,7 @@ use backend\widgets\MetronicSingleCheckbox;
 
     <div class="row justify-content-between">
         <div class="col like-box">
-			<?= $form->field($model, 'seo_title_pl')->textInput(['maxlength' => true]) ?>
+			<?= $form->field($model, 'seo_title_ge')->textInput(['maxlength' => true]) ?>
 
 			<?= $form->field($model, 'seo_title_en')->textInput(['maxlength' => true]) ?>
 
@@ -24,7 +24,7 @@ use backend\widgets\MetronicSingleCheckbox;
 
     <div class="row justify-content-between">
         <div class="col like-box">
-			<?= $form->field($model, 'seo_description_pl')->textInput(['maxlength' => true]) ?>
+			<?= $form->field($model, 'seo_description_ge')->textInput(['maxlength' => true]) ?>
 
 			<?= $form->field($model, 'seo_description_en')->textInput(['maxlength' => true]) ?>
 
@@ -36,7 +36,7 @@ use backend\widgets\MetronicSingleCheckbox;
 
     <div class="row justify-content-between">
         <div class="col like-box">
-			<?= $form->field($model, 'name_pl')->textInput(['maxlength' => true]) ?>
+			<?= $form->field($model, 'name_ge')->textInput(['maxlength' => true]) ?>
 
 			<?= $form->field($model, 'name_en')->textInput(['maxlength' => true]) ?>
 
@@ -60,7 +60,7 @@ use backend\widgets\MetronicSingleCheckbox;
 
     <div class="row justify-content-between">
         <div class="col like-box">
-			<?= $form->field($model, 'body_pl')->widget(Widget::className(), [
+			<?= $form->field($model, 'body_ge')->widget(Widget::className(), [
 				'settings' => [
 					'lang' => 'ru',
 					'minHeight' => 600,

@@ -110,6 +110,7 @@ class SiteController extends Controller
 	{
 		$language = Yii::$app->language;
 
+
 		$model = [
 			'seo_title' => Yii::$app->settings->get("seo_title_{$language}", 'HelpSettings'),
 			'seo_description' => Yii::$app->settings->get("seo_description_{$language}", 'HelpSettings'),

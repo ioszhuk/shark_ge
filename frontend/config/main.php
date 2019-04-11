@@ -13,7 +13,6 @@ return [
     'language' => 'pl-PL',
     'controllerNamespace' => 'frontend\controllers',
     'on beforeRequest' => function () {
-
 	    $pathInfo = Yii::$app->request->pathInfo;
 	    $query = Yii::$app->request->queryString;
 
@@ -39,7 +38,6 @@ return [
 		    }
 
 	    }
-
     },
     'components' => [
         'request' => [

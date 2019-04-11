@@ -21,11 +21,11 @@ $this->registerMetaTag([
                     <p class="contact-list-block-title"><?= Yii::t('app', 'our_email_title') ?></p>
                     <dl class="phone-contact-list">
                         <dt><?= Yii::t('app', 'email__support_title') ?></dt>
-                        <dd><a href="mailto:support@shark-taxi.pl" style="text-decoration: none;">support@shark-taxi.pl</a></dd>
+                        <dd><a href="mailto:support@shark-taxi.ge" style="text-decoration: none;">support@shark-taxi.ge</a></dd>
                         <dt><?= Yii::t('app', 'email__information_title') ?></dt>
-                        <dd><a href="mailto:info@shark-taxi.pl" style="text-decoration: none;">info@shark-taxi.pl</a></dd>
+                        <dd><a href="mailto:info@shark-taxi.ge" style="text-decoration: none;">info@shark-taxi.ge</a></dd>
                         <dt><?= Yii::t('app', 'email__advertising_title') ?></dt>
-                        <dd><a href="mailto:advertising@shark-taxi.pl" style="text-decoration: none;">advertising@shark-taxi.pl</a></dd>
+                        <dd><a href="mailto:advertising@shark-taxi.ge" style="text-decoration: none;">advertising@shark-taxi.ge</a></dd>
                     </dl>
                 </div>
             </div>

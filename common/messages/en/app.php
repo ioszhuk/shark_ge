@@ -16,15 +16,14 @@ return [
 
 	'home' => 'Home',
 	'cities' => 'Cities',
-	'warsaw' => 'Warsaw',
-	'krakow' => 'Krakow',
-	'wroclaw' => 'Wroclaw',
-	'lodz' => 'Lodz',
-	'poznan' => 'Poznan',
-	'gdansk' => 'Gdansk',
-	'szczecin' => 'Schecin',
+
+	'tbilisi' => 'Tbilisi',
+	'kutaisi' => 'Kutaisi',
+	'batumi' => 'Batumi',
+
 	'drivers' => 'For drivers',
 	'clients' => 'For clients',
+
 	'comments' => 'Comments',
 	'help' => 'Help',
 	'contacts' => 'Contacts',

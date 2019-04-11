@@ -1,8 +1,8 @@
 <?php
 namespace common\models;
 
-use Yii;
 use mohorev\file\UploadImageBehavior;
+use Yii;
 use yii\behaviors\TimestampBehavior;
 use noIT\upload\UploadsBehavior;
 use Imagine\Image\ManipulatorInterface;
@@ -11,11 +11,11 @@ use Imagine\Image\ManipulatorInterface;
  * This is the model class for table "testimonial".
  *
  * @property int $id
- * @property string $name_pl
+ * @property string $name_ge
  * @property string $name_en
  * @property string $name_ru
  * @property string $avatar
- * @property string $body_pl
+ * @property string $body_ge
  * @property string $body_en
  * @property string $body_ru
  * @property int $status
@@ -41,10 +41,10 @@ class Testimonial extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name_pl', 'name_en', 'name_ru', 'avatar', 'status'], 'required'],
-            [['body_pl', 'body_en', 'body_ru'], 'string'],
+            [['name_ge', 'name_en', 'name_ru', 'status'], 'required'],
+            [['body_ge', 'body_en', 'body_ru'], 'string'],
             [['status', 'created_at', 'updated_at'], 'integer'],
-            [['name_pl', 'name_en', 'name_ru'], 'string', 'max' => 255],
+            [['name_ge', 'name_en', 'name_ru'], 'string', 'max' => 255],
 
 	        [['avatar'], 'image', 'extensions' => 'jpeg, jpg, png'],
 	        [['avatar'], 'image', 'skipOnEmpty' => false, 'on' => ['default']],

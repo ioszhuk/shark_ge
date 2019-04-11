@@ -15,11 +15,11 @@ $this->params['breadcrumbs'][] = ['label' => $__params['items'], 'url' => ['clie
 
 $columns = [
 	[
-		'attribute' => 'name_pl',
+		'attribute' => 'name_ge',
 		'format' => 'raw',
 		'label' => 'Название',
 		'value' => function($model) {
-			return Html::a($model->name_pl, ['update', 'id' => $model->id]);
+			return Html::a($model->name_ge, ['update', 'id' => $model->id]);
 		}
 	],
 	[

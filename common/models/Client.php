@@ -13,13 +13,13 @@ use Imagine\Image\ManipulatorInterface;
  *
  * @property int $id
  * @property string $position
- * @property string $name_pl
+ * @property string $name_ge
  * @property string $name_en
  * @property string $name_ru
- * @property string $image_pl
+ * @property string $image_ge
  * @property string $image_en
  * @property string $image_ru
- * @property string $body_pl
+ * @property string $body_ge
  * @property string $body_en
  * @property string $body_ru
  * @property int $sort_order
@@ -46,14 +46,14 @@ class Client extends \yii\db\ActiveRecord
     {
         return [
             [['position', 'sort_order'], 'required'],
-            [['body_pl', 'body_en', 'body_ru'], 'string'],
+            [['body_ge', 'body_en', 'body_ru'], 'string'],
             [['sort_order', 'created_at', 'updated_at'], 'integer'],
             [['position'], 'string', 'max' => 50],
-            [['name_pl', 'name_en', 'name_ru', ], 'string', 'max' => 255],
+            [['name_ge', 'name_en', 'name_ru', ], 'string', 'max' => 255],
 
-	        [['image_pl', 'image_en', 'image_ru'], 'image', 'extensions' => 'jpeg, jpg, png'],
-	        [['image_pl', 'image_en', 'image_ru'], 'image', 'skipOnEmpty' => false, 'on' => ['default']],
-	        [['image_pl', 'image_en', 'image_ru'], 'image', 'skipOnEmpty' => true, 'on' => ['update']],
+	        [['image_ge', 'image_en', 'image_ru'], 'image', 'extensions' => 'jpeg, jpg, png'],
+	        [['image_ge', 'image_en', 'image_ru'], 'image', 'skipOnEmpty' => false, 'on' => ['default']],
+	        [['image_ge', 'image_en', 'image_ru'], 'image', 'skipOnEmpty' => true, 'on' => ['update']],
         ];
     }
 
@@ -66,7 +66,7 @@ class Client extends \yii\db\ActiveRecord
 			'imageUploads' => [
 				'class' => UploadsBehavior::className(),
 				'attributes' => [
-					'image_pl' => [
+					'image_ge' => [
 						'class' => UploadImageBehavior::className(),
 						'createThumbsOnSave' => true,
 						'createThumbsOnRequest' => true,
@@ -79,7 +79,7 @@ class Client extends \yii\db\ActiveRecord
 								'mode' => ManipulatorInterface::THUMBNAIL_OUTBOUND
 							],
 						],
-						'attribute' => 'image_pl',
+						'attribute' => 'image_ge',
 						'scenarios' => ['default', 'update'],
 						'path' => '@cdn/clients/{id}',
 						'url' => '@cdnUrl/clients/{id}',
