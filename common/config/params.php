@@ -4,7 +4,7 @@ return [
 	'supportEmail' => 'support@example.com',
 	'user.passwordResetTokenExpire' => 3600,
 
-	'adminEmailFrom' => 'robot@shark-taxi.pl',
+	'adminEmailFrom' => 'robot@shark-taxi.ge',
 	'adminEmailTo' => 'sg79787111111@gmail.com',
 
 	'position' => [

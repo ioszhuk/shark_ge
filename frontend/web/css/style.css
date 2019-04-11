@@ -2929,6 +2929,7 @@ form {
 }
 
 @media (min-width: 960px) {
+
     .main-menu li.drop div.liswrap ul li a:after {
         content: ">";
         position: absolute;
@@ -2942,7 +2943,6 @@ form {
 }
 
 @media (max-width: 959px) {
-
 
     .contacts-line {
         border: 0
@@ -2984,8 +2984,43 @@ form {
     }
 
     .georgia-map {
-        width: auto !important;
+        background: none !important;
+        display: block;
+        margin: 0 auto 30px ;
+        width: auto !important;;
+        height: auto !important;;
     }
+
+    .georgia-map .static-map {
+        display: block !important;
+        margin: 0 auto 30px !important;
+    }
+
+    .georgia-map .static-map img {
+        max-width: 100%;
+        height: auto;
+        background: transparent;
+    }
+
+    #map li {
+        position: static;
+        text-shadow: none;
+    }
+
+    #map li:after {
+        display: none;
+    }
+
+    .georgia-map ul li {
+        width: auto !important;
+        position: static !important;;
+        top: auto !important;
+        left: auto !important;
+        margin-bottom: 7px !important;;
+        text-align: center !important;;
+    }
+
+
 
 }
 
