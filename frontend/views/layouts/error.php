@@ -18,10 +18,10 @@ AppAsset::register($this);
 	<?= Html::csrfMetaTags() ?>
 	<title><?= Html::encode($this->title) ?></title>
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="alternate" hreflang="ru-UA" href="https://shark-taxi.ge">
+    <link rel="alternate" hreflang="ka-GE" href="https://shark-taxi.ge">
     <link rel="alternate" hreflang="en-UA" href="https://shark-taxi.ge/en">
     <link rel="alternate" hreflang="uk-UA" href="https://shark-taxi.ge/ru">
-    <meta property="og:title" content="Shark Taxi ">
+    <meta property="og:title" content="Shark Taxi">
     <meta property="og:description" content="Taxi service">
     <meta property="og:image" content="https://shark-taxi.ge/image/yellow-logo-shark.png">
     <meta name="apple-itunes-app" content="app-id=779587448">

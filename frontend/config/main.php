@@ -10,7 +10,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log', 'languages'],
-    'language' => 'pl-PL',
+    'language' => 'ka_GE',
     'controllerNamespace' => 'frontend\controllers',
     'on beforeRequest' => function () {
 	    $pathInfo = Yii::$app->request->pathInfo;
