@@ -16,40 +16,20 @@ class AppAsset extends AssetBundle
 	public $baseUrl = '@web';
 
 	public $css = [
-		'css/common-style.css?314',
-		'css/style.css?314',
-		'css/map-style.css?314',
+		'css/common-style.css?6664564',
+		'css/style.css?6664564',
+		'css/map-style.css?6664564',
 	];
 
 	public $js = [
-		'js/owl-carousel.js?314',
-		'js/youtube-resizer.js?314',    
-		'js/carousel-after-load.js?314',
-		'js/custom.js?314'
+		'js/owl-carousel.js?6664564',
+		'js/youtube-resizer.js?6664564',
+		'js/carousel-after-load.js?6664564',
+		'js/custom.js?6664564'
 	];
 
 	public $depends = [
 		'yii\web\YiiAsset',
 	];
-
-	public function init()
-	{
-		parent::init();
-
-//		self::$antiCacheCode = rand(100, 99999999999999);
-//
-//		if ( self::$antiCacheCode ) {
-//
-//			foreach ($this->css as &$item) {
-//				$item .= '?' . self::$antiCacheCode;
-//			}
-//
-//			foreach ($this->js as &$item) {
-//				$item .= '?' . self::$antiCacheCode;
-//			}
-//
-//		}
-
-	}
 
 }
