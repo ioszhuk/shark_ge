@@ -44,10 +44,10 @@ return [
 
 
 	'our_features_1_title' => 'Comfortable and <span>fast</span>',
-	'our_features_1_summary' => 'Order a taxi in Warsaw, Krakow or another city is now possible with a few touches - using our mobile application.',
+	'our_features_1_summary' => 'Order a taxi in Tbilisi, Kutaisi or another city is now possible with a few touches - using our mobile application.',
 
 	'our_features_2_title' => 'Many <span>taxi drivers </span>',
-	'our_features_2_summary' => 'If you want to book a taxi in Warsaw, Krakow or other major cities in Poland - we will always serve you.',
+	'our_features_2_summary' => 'If you want to book a taxi in Tbilisi, Batumi or other major cities in Georgia - we will always serve you.',
 
 	'our_features_3_title' => 'Taxi in <span>phone</span>',
 	'our_features_3_summary' => 'With our Android and iOS apps, you can call a taxi for a few seconds, anywhere, anytime.',
